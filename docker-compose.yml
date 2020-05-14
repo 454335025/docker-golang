@@ -8,3 +8,12 @@ services:
       - 8080:8080
     volumes:
       - ./src:/go/src:rw
+    networks:
+      - lnmp
+    environment:
+      GOPROXY: "https://goproxy.cn"
+
+networks:
+  lnmp:
+    external:
+      name: docker

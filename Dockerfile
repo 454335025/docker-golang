@@ -1,5 +1,5 @@
 #build stage
-FROM golang:1
+FROM golang:latest
 
 COPY ./sources.list.stretch /etc/apt/sources.list
 
